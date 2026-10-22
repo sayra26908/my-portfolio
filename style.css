@@ -240,7 +240,7 @@ footer {
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -284,7 +284,7 @@ footer {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     border-left: 5px solid #4e54c8;
 }
 
@@ -326,7 +326,8 @@ footer {
 }
 
 /* Code Boxes Styling */
-.code-box, .code-block {
+.code-box,
+.code-block {
     background: #1e1e2f;
     color: #00f2fe;
     padding: 15px 20px;
@@ -395,7 +396,7 @@ footer {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .contact-form-card h2 {
@@ -570,11 +571,13 @@ footer {
 
 /* 1. Laptops & Large Tablets (max-width: 992px) */
 @media (max-width: 992px) {
+
     .about-container,
     .skills-container,
     .resources-container,
     .contact-container {
-        grid-template-columns: repeat(2, 1fr); /* 3 ya 4 columns ko 2 columns mein convert karega */
+        grid-template-columns: repeat(2, 1fr);
+        /* 3 ya 4 columns ko 2 columns mein convert karega */
         gap: 20px;
         padding: 20px;
     }
@@ -586,12 +589,14 @@ footer {
         position: relative;
         padding: 15px 20px;
         display: flex;
-        justify-content: space-between; /* Mobile view mein bhi right side par rakhne ke liye */
+        justify-content: space-between;
+        /* Mobile view mein bhi right side par rakhne ke liye */
         align-items: center;
     }
 
     .hamburger {
-        display: flex; /* Show 3 lines icon on mobile screens */
+        display: flex;
+        /* Show 3 lines icon on mobile screens */
     }
 
     /* Menu initially hidden off-screen */
@@ -611,32 +616,34 @@ footer {
     }
 
     /* --- Toggle Menu when Checkbox is Checked --- */
-    .menu-btn:checked ~ nav .nav-links {
+    .menu-btn:checked~nav .nav-links {
         right: 20px;
     }
 
     /* Transform Hamburger Icon to 'X' (Cross) when Checked */
-    .menu-btn:checked ~ .hamburger .bar:nth-child(1) {
+    .menu-btn:checked~.hamburger .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    .menu-btn:checked ~ .hamburger .bar:nth-child(2) {
+    .menu-btn:checked~.hamburger .bar:nth-child(2) {
         opacity: 0;
     }
 
-    .menu-btn:checked ~ .hamburger .bar:nth-child(3) {
+    .menu-btn:checked~.hamburger .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
 
 /* 3. Mobile Phones (max-width: 600px) */
 @media (max-width: 600px) {
+
     /* All Containers convert to 1 Column (Single Column Layout) */
     .about-container,
     .skills-container,
     .resources-container,
     .contact-container {
-        grid-template-columns: 1fr; /* Saare cards ek ke neeche ek aayenge */
+        grid-template-columns: 1fr;
+        /* Saare cards ek ke neeche ek aayenge */
         padding: 15px 10px;
         gap: 15px;
     }
@@ -647,7 +654,8 @@ footer {
     }
 
     .profile-avatar {
-        width: 120px;  /* Mobile screen par avatar image ka size thoda adjust hoga */
+        width: 120px;
+        /* Mobile screen par avatar image ka size thoda adjust hoga */
         height: 120px;
         margin-bottom: 12px;
     }
@@ -667,5 +675,3 @@ footer {
         margin-top: 8px;
     }
 }
-
-
