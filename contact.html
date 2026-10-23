@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DevLearn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">Dev<span>Learn</span></div>
+        <!-- Hidden checkbox and hamburger label for pure CSS mobile menu toggle -->
+        <input type="checkbox" id="menu-btn" class="menu-btn">
+        <label for="menu-btn" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Title Header -->
+    <section class="page-header">
+        <h1>Get In <span class="highlight">Touch</span></h1>
+        <p>Have questions, project inquiries, or feedback? Send a message below!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+
+        <!-- Contact Info Box -->
+        <div class="contact-info">
+            <h2>Let's Connect</h2>
+            <p>Feel free to reach out for collaborations, learning queries, or frontend development opportunities.</p>
+
+            <div class="info-item">
+                <h3>📧 Email</h3>
+                <p><a href="mailto:saira1235za@gmail.com">saira1235za@gmail.com</a></p>
+                </div>
+
+                <div class="info-item">
+                <h3>🌐 Github</h3>
+                <p><a href="https://github.com/sayra26908" target="_blank">github.com/sayra26908</a></p>
+            </div>
+
+            <div class="info-item">
+                <h3>📍 Location</h3>
+                <p>Karachi, Pakistan</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+            <h2>Send a Message</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+
+        </section>
+
+       <!-- Footer with Social Links -->
+    <footer class="site-footer">
+        <p>&copy; 2026 DevLearn Portfolio. All Rights Reserved.</p>
+        <div class="footer-socials">
+            <a href="https://github.com/sayra26908" target="_blank">GitHub</a> | 
+            <a href="mailto:saira1235za@gmail.com">Email</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

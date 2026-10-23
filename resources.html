@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resources Hub - DevLearn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">Dev<span>Learn</span></div>
+        <!-- Hidden checkbox and hamburger label for pure CSS mobile menu toggle -->
+        <input type="checkbox" id="menu-btn" class="menu-btn">
+        <label for="menu-btn" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Title Header -->
+    <section class="page-header">
+        <h1>Student Resource <span class="highlight">Hub</span></h1>
+        <p>Complete Notes, Cheat Sheets & Guides for HTML, CSS, Git, and GitHub.</p>
+    </section>
+
+    <!-- Resource Content Section -->
+    <section class="resources-container">
+
+        <!-- 1. HTML5 COMPLETE GUIDE -->
+        <div class="resource-card">
+            <h2>🌐 HTML5 (HyperText Markup Language) Complete Notes</h2>
+            <p>HTML forms the structural foundation of every webpage. Below are core concepts and key semantic elements:</p>
+
+            <h3>Core Concepts:</h3>
+            <ul class="resource-list">
+                <li><strong>Tags &amp; Elements:</strong> HTML tags open with <code>&lt;tag&gt;</code> and close with <code>&lt;/tag&gt;</code>.</li>
+                <li><strong>Attributes:</strong> Provide additional element information (e.g., <code>class</code>, <code>id</code>, <code>src</code>, <code>href</code>).</li>
+            </ul>
+
+            <h3>Important Semantic Elements:</h3>
+            <ul class="resource-list">
+                <li><code>&lt;header&gt;</code>: Top container for branding, page titles, and primary navigation.</li>
+                <li><code>&lt;nav&gt;</code>: Encloses major site navigation links.</li>
+                <li><code>&lt;main&gt;</code>: Contains the primary, unique content of the page.</li>
+                <li><code>&lt;section&gt;</code>: Groups related thematic content together.</li>
+                <li><code>&lt;article&gt;</code>: Self-contained, independent content block (e.g., blog post).</li>
+                <li><code>&lt;aside&gt;</code>: Secondary sidebar content or related links.</li>
+                <li><code>&lt;footer&gt;</code>: Bottom section for copyright statements and metadata.</li>
+            </ul>
+        </div>
+
+        <!-- 2. CSS3 COMPLETE GUIDE -->
+        <div class="resource-card">
+            <h2>🎨 CSS3 (Cascading Style Sheets) Complete Notes</h2>
+            <p>CSS controls visual presentation, styling, and responsive layout designs:</p>
+
+            <h3>Key Styling Concepts:</h3>
+            <ul class="resource-list">
+                <li><strong>Selectors:</strong> Element selectors (<code>h1</code>), Class selectors (<code>.class</code>), and ID selectors (<code>#id</code>).</li>
+                <li><strong>Box Model:</strong> Concept defining Margin, Border, Padding, and Content area dimensions.</li>
+            </ul>
+
+            <h3>Layout Systems:</h3>
+            <ul class="resource-list">
+                <li><strong>Flexbox:</strong> Ideal for 1-Dimensional alignment (e.g., <code>display: flex; justify-content: center; align-items: center;</code>).</li>
+                <li><strong>CSS Grid:</strong> Optimal for 2-Dimensional grid layouts (e.g., <code>display: grid; grid-template-columns: repeat(3, 1fr);</code>).</li>
+                <li><strong>Media Queries:</strong> Enables responsive mobile breakpoints: <code>@media (max-width: 768px) { ... }</code>.</li>
+            </ul>
+        </div>
+
+        <!-- 3. GIT & GITHUB COMPLETE GUIDE -->
+        <div class="resource-card">
+            <h2>🌱 Git &amp; GitHub Version Control Guide</h2>
+            <p>Comprehensive workflow guide for tracking code changes, saving versions, and hosting projects:</p>
+
+            <h3>Git vs GitHub:</h3>
+            <ul class="resource-list">
+                <li><strong>Git:</strong> Distributed Version Control System tracking local project changes.</li>
+                <li><strong>GitHub:</strong> Cloud-based platform hosting Git repositories online for remote access.</li>
+            </ul>
+
+            <h3>Essential Git Terminal Commands:</h3>
+            <div class="code-box">
+                <p><code>git init</code> - Initializes a new local Git repository.</p>
+                <p><code>git status</code> - Displays working tree status and modified files.</p>
+                <p><code>git add .</code> - Stages all modified files for the next commit.</p>
+                <p><code>git commit -m "Message"</code> - Saves staged changes to repository history.</p>
+                <p><code>git branch -M main</code> - Renames default active branch to 'main'.</p>
+                <p><code>git remote add origin [URL]</code> - Links local repository to remote GitHub repository.</p>
+                <p><code>git push -u origin main</code> - Uploads local commits to the remote GitHub main branch.</p>
+                <p><code>git pull origin main</code> - Fetches and merges latest remote updates into local branch.</p>
+            </div>
+        </div>
+
+        <!-- 4. STUDENT PRACTICE PROJECT IDEAS -->
+        <div class="resource-card">
+            <h2>🚀 Beginner Practice Project Ideas</h2>
+            <p>Want to test your HTML &amp; CSS skills? Try building these beginner-friendly projects:</p>
+
+            <ul class="resource-list">
+                <li><strong>1. Personal Profile Card:</strong> A clean card featuring your photo, short bio, social links, and a follow button. (Focus: Box model, Flexbox).</li>
+                <li><strong>2. Product Landing Page:</strong> A simple page for a product (like headphones or shoes) with an image, description, and a "Buy Now" CTA button. (Focus: Grid/Flexbox layouts).</li>
+                <li><strong>3. Simple Recipe Blog:</strong> A single-page recipe layout featuring ingredients list, step-by-step instructions, and nice typography. (Focus: Semantic HTML elements).</li>
+            </ul>
+        </div>
+
+        <!-- 5. HTML BOILERPLATE TEMPLATE -->
+        <div class="resource-card">
+            <h2>💡 Starter HTML5 Boilerplate</h2>
+            <p>Standard foundation template required for starting any new web development project:</p>
+            <pre class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document Title&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;p&gt;Main content goes here...&lt;/p&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2026 DevLearn&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+        </div>
+
+    </section>
+
+   <!-- Footer with Social Links -->
+    <footer class="site-footer">
+        <p>&copy; 2026 DevLearn Portfolio. All Rights Reserved.</p>
+        <div class="footer-socials">
+            <a href="https://github.com/sayra26908" target="_blank">GitHub</a> | 
+            <a href="mailto:saira1235za@gmail.com">Email</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
