@@ -12,23 +12,31 @@
 
     <!-- Header Navigation -->
     <header class="navbar">
-        <div class="logo">Dev<span>Learn</span></div>
-        <!-- Hidden checkbox and hamburger label for pure CSS mobile menu toggle -->
-        <input type="checkbox" id="menu-btn" class="menu-btn">
-        <label for="menu-btn" class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="resources.html" class="active">Resources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="logo">Saira<span>Dev</span></div>
+        <div class="nav-right-group">
+            <!-- Hidden checkbox and hamburger label for pure CSS mobile menu toggle -->
+            <input type="checkbox" id="menu-btn" class="menu-btn">
+            <label for="menu-btn" class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Pure CSS Dark Mode Toggle Checkbox & Icon -->
+            <input type="checkbox" id="dark-btn" class="dark-btn">
+            <label for="dark-btn" class="dark-icon" aria-label="Toggle dark mode">
+                <span class="moon">🌙</span>
+                <span class="sun">☀️</span>
+            </label>
+        </div>
     </header>
 
     <!-- Page Title Header -->
@@ -49,9 +57,11 @@
             <h3>Core Concepts:</h3>
             <ul class="resource-list">
                 <li><strong>Tags &amp; Elements:</strong> HTML tags open with <code>&lt;tag&gt;</code> and close with
-                    <code>&lt;/tag&gt;</code>.</li>
+                    <code>&lt;/tag&gt;</code>.
+                </li>
                 <li><strong>Attributes:</strong> Provide additional element information (e.g., <code>class</code>,
-                    <code>id</code>, <code>src</code>, <code>href</code>).</li>
+                    <code>id</code>, <code>src</code>, <code>href</code>).
+                </li>
             </ul>
 
             <h3>Important Semantic Elements:</h3>
@@ -82,11 +92,14 @@
             <h3>Layout Systems:</h3>
             <ul class="resource-list">
                 <li><strong>Flexbox:</strong> Ideal for 1-Dimensional alignment (e.g.,
-                    <code>display: flex; justify-content: center; align-items: center;</code>).</li>
+                    <code>display: flex; justify-content: center; align-items: center;</code>).
+                </li>
                 <li><strong>CSS Grid:</strong> Optimal for 2-Dimensional grid layouts (e.g.,
-                    <code>display: grid; grid-template-columns: repeat(3, 1fr);</code>).</li>
+                    <code>display: grid; grid-template-columns: repeat(3, 1fr);</code>).
+                </li>
                 <li><strong>Media Queries:</strong> Enables responsive mobile breakpoints:
-                    <code>@media (max-width: 768px) { ... }</code>.</li>
+                    <code>@media (max-width: 768px) { ... }</code>.
+                </li>
             </ul>
         </div>
 

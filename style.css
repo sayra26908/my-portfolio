@@ -564,31 +564,173 @@ footer {
     transition: all 0.3s ease;
 }
 
+/* ==========================================
+   PURE CSS DARK MODE (NO JAVASCRIPT)
+   ========================================== */
+
+/* Hide the dark mode checkbox */
+.dark-btn {
+    display: none;
+}
+
+/* Dark Mode Toggle Icon Styling */
+.dark-icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.dark-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Default state: Show Moon, Hide Sun */
+.dark-icon .sun {
+    display: none;
+}
+
+/* When checked: Show Sun, Hide Moon */
+#dark-btn:checked~.dark-icon .moon {
+    display: none;
+}
+
+#dark-btn:checked~.dark-icon .sun {
+    display: inline;
+}
+
+/* --- Global Dark Theme Changes using :has() --- */
+body:has(#dark-btn:checked) {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body:has(#dark-btn:checked) .overview-card,
+body:has(#dark-btn:checked) .about-card,
+body:has(#dark-btn:checked) .skill-card,
+body:has(#dark-btn:checked) .resource-card,
+body:has(#dark-btn:checked) .contact-form-card {
+    background: #1e1e2f;
+    color: #e0e0e0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+body:has(#dark-btn:checked) .overview-card h3,
+body:has(#dark-btn:checked) .about-card h2,
+body:has(#dark-btn:checked) .skill-card h3,
+body:has(#dark-btn:checked) .resource-card h2,
+body:has(#dark-btn:checked) .contact-form-card h2 {
+    color: #00f2fe;
+}
+
+body:has(#dark-btn:checked) .overview-card p,
+body:has(#dark-btn:checked) .about-card p,
+body:has(#dark-btn:checked) .skill-card p,
+body:has(#dark-btn:checked) .resource-card p,
+body:has(#dark-btn:checked) .contact-form-card p,
+body:has(#dark-btn:checked) .about-card ul li {
+    color: #b0c4de;
+}
+
+body:has(#dark-btn:checked) .form-group input,
+body:has(#dark-btn:checked) .form-group textarea {
+    background-color: #2a2a3e;
+    color: #fff;
+    border-color: #444;
+}
+
+/* Dark Mode Toggle Icon Styling */
+.dark-icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.dark-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar Right Group Wrapper */
+.nav-right-group {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    /* Links aur moon icon ke darmiyan fasla */
+    margin-left: auto;
+    /* Poori group ko utha kar right side par kar dega */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+/* Dark Mode Icon Styling */
+.dark-btn {
+    display: none;
+}
+
+.dark-icon {
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.dark-icon:hover {
+    transform: scale(1.1);
+}
+
+.dark-icon .sun {
+    display: none;
+}
+
+#dark-btn:checked~.dark-icon .moon {
+    display: none;
+}
+
+#dark-btn:checked~.dark-icon .sun {
+    display: inline;
+}
 
 /* ==========================================
    COMPLETE RESPONSIVE DESIGN (MEDIA QUERIES)
    ========================================== */
 
 /* 1. Laptops & Large Tablets (max-width: 992px) */
+
 @media (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
 
     .about-container,
     .skills-container,
-    .resources-container,
-    .contact-container {
-        grid-template-columns: repeat(2, 1fr);
-        /* 3 ya 4 columns ko 2 columns mein convert karega */
-        gap: 20px;
+    .resources-container {
         padding: 20px;
     }
 }
 
+
 /* 2. Tablets & Small Screens (max-width: 768px) */
 @media (max-width: 768px) {
     .navbar {
+        display: flex;
         position: relative;
         padding: 15px 20px;
-        display: flex;
         justify-content: space-between;
         /* Mobile view mein bhi right side par rakhne ke liye */
         align-items: center;
@@ -596,7 +738,8 @@ footer {
 
     .hamburger {
         display: flex;
-        /* Show 3 lines icon on mobile screens */
+        margin-left: auto;
+        cursor: pointer;
     }
 
     /* Menu initially hidden off-screen */
